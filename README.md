@@ -21,6 +21,10 @@ Printable Chinese practice sheets
 
 ## Reserved catalog numbers
 
+There are no catalog numbers using the digit `4`.
+
+Additionally, here is a list of other reserved numbers.
+
 | Number | Reason |
 | -- | :-- |
 | `11` | Avoid confusion with LTR paper size |

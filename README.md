@@ -16,5 +16,12 @@ Printable Chinese practice sheets
 7x - empty grid paper (fanggezhi)
 9x - novelty paper
 
-````
+```
 
+
+## Reserved catalog numbers
+
+| Number | Reason |
+| -- | :-- |
+| `11` | Avoid confusion with LTR paper size |
+| `17` | Avoid confusion with TAB or LGR paper size |

@@ -5,10 +5,10 @@ name: pdf-png-thumb
 
 on:
   push:
-#    paths:
-#      - 'pdf/*.pdf'
-#    branches:
-#      - 'main'  
+    paths:
+      - 'pdf/*.pdf'
+    branches:
+      - 'main'  
 
 jobs:
   build:

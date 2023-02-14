@@ -1,5 +1,6 @@
 # nix.yaml
-# pdf-png-thumb
+# pdf-png-thumb generator workflow
+# convert pdfs to png and png-thumbnails
 
 name: pdf-png-thumb
 
@@ -28,10 +29,6 @@ jobs:
             
             # add utils
             sudo apt-get install -y poppler-utils rename
-                  
-            # verbose logging
-            ls pdf
-            tree .
             
             # create fresh `png` and `thumb` dirs
             rm -rf png thumb
@@ -50,21 +47,9 @@ jobs:
               pdftoppm -png -x 300 -y 300 -W 300 -H 300 $entry $thumbfile
             done
 
-            ls png
-            ls thumb
-            tree .
-
             # based on the solution found here:
             # https://unix.stackexchange.com/a/306258
-
-            # cd png
             rename 's/-1.png/.png/' {png/*,thumb/*}
-
-            ls png
-            ls thumb
-            tree .
-            
-            ls
             
         - name: show a tree
           run: |

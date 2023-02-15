@@ -68,8 +68,6 @@ jobs:
 
             # based on the solution found here:
             # https://unix.stackexchange.com/a/306258
-
-            # cd png
             rename 's/-1.png/.png/' {png/*,thumb/*}
 
             ls png
